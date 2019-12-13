@@ -27,7 +27,10 @@ module.exports = {
       const n = student[0].name
       const m = student[0].p_mobile
 
-      next({n,m});
+      next({
+        1: n,
+        2: m
+      });
     });
   },
 };
