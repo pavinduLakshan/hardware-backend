@@ -26,10 +26,12 @@ module.exports = {
     Student.find({fin_id}, function(err, student) {
       const n = student[0].name
       const m = student[0].p_mobile
+      const p = student[0].paid
 
       next({
         1: n,
-        2: m
+        2: m,
+        3: p
       });
     });
   },

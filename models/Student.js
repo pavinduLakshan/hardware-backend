@@ -17,6 +17,11 @@ const studentSchema = mongoose.Schema({
     required: false,
     trim: true,
   },
+  paid: {
+    type: Number,
+    required: false,
+    trim: true,
+  },
 });
 
 const Student = mongoose.model("Student", studentSchema);
