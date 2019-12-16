@@ -27,7 +27,7 @@ module.exports = {
       const n = student[0].name
       const m = student[0].p_mobile
       const p = student[0].paid
-
+ 
       next({
         1: n,
         2: m,
