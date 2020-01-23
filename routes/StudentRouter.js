@@ -7,7 +7,7 @@ router.get("/", function(req, res) {
   StudentController.getAllStudents(students => res.send(students));
 });
 
-router.post("/:fin_id", function(req, res) {
+router.get("/enroll/:fin_id", function(req, res) {
   StudentController.addStudent(req.params.fin_id, student => res.send(student));
 });
 
