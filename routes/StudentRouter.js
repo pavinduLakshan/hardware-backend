@@ -15,6 +15,10 @@ router.get("/:fin_id", function(req, res) {
   StudentController.findStudentByFinId(req.params.fin_id, student => res.send(student));
 });
 
+router.get("/:fin_id/mobile", function(req, res) {
+  StudentController.findStudentPhoneByFinId(req.params.fin_id, student => res.send(student));
+});
+
 router.put("/:fin_id",  function(req, res) {
     StudentController.updateStudent(
       req.params.fin_id,
